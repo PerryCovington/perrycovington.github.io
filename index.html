@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Most Awesome Radical Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
 
   <body>
@@ -23,46 +24,72 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery-->
-    <section class="portfolio-gallery">
+    <section class="portfolio-container">
       <h1>Portfolio</h1>
-      <div class="gallery-item">
-        <a class="glightbox" href="image/IMG_0273.PNG">
-          <img class="gallery-img" src="image/IMG_0273.PNG" alt="flipside"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="image/IMG_0278.PNG">
-          <img class="gallery-img" src="image/IMG_0278.PNG" alt="flipside 2"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="image/IMG_0282.PNG">
-          <img class="gallery-img" src="image/IMG_0282.PNG" alt="flipside 3"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="image/IMG_0310.PNG">
-          <img class="gallery-img" src="image/IMG_0310.PNG" alt="something"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="video/My Wallpaper Gif 2 new finished.mp4">
-          <img
-            class="gallery-img"
-            src="video/My Wallpaper Gif 2 new finished.mp4"
-            alt="gif"
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="">
-          <img class="gallery-img" src="" alt=""
-        /></a>
-      </div>
-      <div class="gallery-item">
-        <a class="glightbox" href="">
-          <img class="gallery-img" src="" alt=""
-        /></a>
-      </div>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="image/IMG_0273.PNG"
+            data-glightbox="title: flipside; description: wow"
+          >
+            <img class="gallery-img" src="image/IMG_0273.PNG" alt="flipside"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="image/IMG_0278.PNG"
+            data-glightbox="title: flipside 2; description: wow"
+          >
+            <img class="gallery-img" src="image/IMG_0278.PNG" alt="flipside 2"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="image/IMG_0282.PNG"
+            data-glightbox="title: flipside3; description: wow"
+          >
+            <img class="gallery-img" src="image/IMG_0282.PNG" alt="flipside 3"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="image/IMG_0310.PNG"
+            data-glightbox="title: something; description: wow"
+          >
+            <img class="gallery-img" src="image/IMG_0310.PNG" alt="something"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a
+            class="glightbox"
+            href="video/My Wallpaper Gif 2 new finished.mp4"
+            data-glightbox="title: gif; description: wow"
+          >
+            <img
+              class="gallery-img"
+              src="video/My Wallpaper Gif 2 new finished.mp4"
+              alt="gif"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img class="gallery-img" src="" alt=""
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a class="glightbox" href="">
+            <img class="gallery-img" src="" alt=""
+          /></a>
+        </div>
+      </section>
     </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
